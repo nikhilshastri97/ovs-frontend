@@ -1,0 +1,43 @@
+
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: rgb(19, 227, 241);
+  }
+
+  /* default display for all 'li' elements:
+*/
+#nav li {
+  display: list-item;
+}
+
+/* hides the 'li' elements that follow an 'li' element,
+ hides the 'li:first-child' when the 'ul' is hovered:
+*/
+#nav li + li,
+#nav:hover li:first-child {
+  display: none;
+}
+
+/* shows the 'li' elements that follow other 'li' elements,
+ when the 'ul' is hovered:
+*/
+#nav:hover li + li {
+  display: inline-block;
+}
+  
+  /* Current/active navbar link
+  .active {
+    background-color: #04AA6D;
+  }
+   */
